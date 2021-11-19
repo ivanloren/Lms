@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+
+<body>
+
+    <h1>Formulario de registro:</h1>
+    <form action="http://httpbin.org/post" method="post">
+        <fieldset>
+            <legend><strong>Datos personales:</strong></legend>
+
+            <label for="nombre">Nombre: </label><input type="text" name="nom" id="nombre" required
+                placeholder="Escriba su nombre"><br>
+            <label for="apellidos">Apellidos: </label><input type="text" name="ape" id="apellidos" required
+                placeholder="Escriba sus apellidos"><br>
+            <label for="dni">DNI: </label><input type="text" name="dni" id="dni" required
+                placeholder="Escriba su DNI"><br>
+            <label for="email">E-mail: </label><input type="text" name="em" id="email"
+                placeholder="Escriba su correo"><br>
+
+        </fieldset>
+        <div>
+            <label for="sexo"><strong>Sexo:</strong> </label>
+            <select id="sexo" name="s">
+                <option value="masc">Masculino</option>
+                <option value="fem">Femenino</option>
+                <option value="nb">No binario</option>
+            </select>
+        </div>
+        <div>
+            <p><strong>Formación:</strong></p>
+            <input type="checkbox" name="form" value="1" id="eso" /><label for="eso"><em>Título ESO</em></label><br>
+            <input type="checkbox" name="form" value="2" id="bachi" /><label for="bachi"><em>Título
+                    Bachillerato</em></label><br>
+            <input type="checkbox" name="form" value="3" id="grado" /><label for="grado"><em>Título Grado Medio o
+                    Superior</em></label><br>
+        </div>
+        <div>
+            <p><strong>Residencia:</strong></p>
+            <input type="radio" name="resi" value="1" id="zaragoza" /><label
+                for="zaragoza"><em>Zaragoza</em></label><br>
+            <input type="radio" name="resi" value="2" id="teruel" /><label for="teruel"><em>Teruel</em></label><br>
+            <input type="radio" name="resi" value="3" id="huesca" /><label for="huesca"><em>Huesca</em></label><br>
+        </div>
+        <div>
+            <p>Fecha de nacimiento:</p>
+            <input type="date" name="dt" value="1" id="fecha" min="1950-01-01" max="2021-11-03" />
+        </div>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Reiniciar">
+    </form>
+</body>
+
+</html>
